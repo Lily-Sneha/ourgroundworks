@@ -1,0 +1,39 @@
+/* css styling code */
+
+/*  * is a universal selector, used for styling the complete page with same style */
+* {
+    box-sizing: border-box;
+    top: 0;
+}
+
+
+/* styling navigation bar */
+.nav-bar {
+    background-color: #ff6026;
+    margin: 0px 40px 0 40px;
+    /* border: 1px solid #e74710; */
+    font-family: 'Strait', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    max-width: 100%;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-bar ul li {
+    padding: 10px 25px;
+}
+
+
+/* Code of making responsive page */
+
+@media screen and (max-width: 450px) {
+    .nav-bar {
+        display: none;
+    }
+}
