@@ -18,10 +18,14 @@ body {
 /* styling navigation bar */
 .nav-bar {
     background-color: #ff6026;
-    margin: 0 10% 0 10%;
+    margin: 0 10% 0 12%;
     font-family: 'Strait', sans-serif;
     font-size: 22px;
     height: 35px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: right; */
+    /* justify-content: space-between; */
 }
 
 .nav-link {
@@ -44,10 +48,9 @@ body {
     cursor: pointer;
 }
 
-.nav-bar ul :hover,
-.nav-bar ul :active {
-    /* background-color: rgb(211, 147, 132); */
-    text-decoration: underline;
+.nav-bar ul :hover {
+    background-color: rgb(211, 147, 132);
+    /* text-decoration: underline; */
 }
 
 /* dropdown section start*/
@@ -59,31 +62,34 @@ body {
 .dropdown {
     display: none;
     position: absolute;
-    min-width: 160px;
-    padding: 12px 16px;
+    /* min-width: 160px; */
+    /* padding: 12px 16px; */
     z-index: 1;
     list-style: none;
     text-align: left;
     border: 1px solid white;
-
 }
 
-#programme-drop :hover .dropdown {
+.nav-link #programme-drop:hover .dropdown {
     display: block;
+    background-color: #ff6026;
 }
 
 .dropdown li a {
-    font-size: 13px;
-    line-height: 1;
+    font-size: 15px;
+    /* line-height: 1; */
 }
 
 /* dropdown section end*/
+
+
 .container2 {
     display: flex;
     justify-content: space-between;
     /* margin: 0 9% 0 18%; */
     /* padding: 0px 76px 0 318px; */
-    padding: 0px 138px 0 244px;
+    /* padding: 0px 138px 0 244px; */
+    padding: 0 61px 0 0;
 }
 
 .logo {
@@ -110,16 +116,47 @@ h3>p>span {
     font-family: "over the rainbow";
 }
 
-/* text section start */
+/* text section start **********************************/
+.text-container {
+    margin: 0 65px 0 220px;
+}
+
 .text-section1 {
     /* padding: 0px 0 0 318px; */
     background-color: #cac1b65e;
-    margin: 0 65px 0 220px;
+    /* margin: 0 65px 0 220px; */
 }
 
 .text-section1 p {
     padding: 30px;
 }
+
+.text-secrion3 {
+    display: flex;
+    /* justify-content: space-between; */
+    color: brown;
+    font-family: over the rainbow;
+    font-size: 22px;
+}
+
+.text-secrion3 p {
+    padding: 0 0 0 10px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-family: trebuchet ms, helvetica, sans-serif;
+    color: #6b6d6e;
+    ;
+}
+
+.table-container div p {
+    padding: 0 45px 0 0px;
+}
+
+
 
 /* text section end*/
 
