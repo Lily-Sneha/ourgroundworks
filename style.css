@@ -3,14 +3,11 @@
 /*  * is a universal selector, used for styling the complete page with same style */
 * {
     box-sizing: border-box;
-    /* margin: 0; */
 }
 
 body {
     background-color: rgba(236, 228, 186, 0.41);
     background-image: url(//nebula.wsimg.com/4db9aa9…?AccessKeyId=531592D248B589D87A56&alloworigin=1);
-    /* max-width: 100%; */
-    /* overflow-y: hidden; */
     overflow-x: hidden;
 }
 
@@ -22,17 +19,11 @@ body {
     font-family: 'Strait', sans-serif;
     font-size: 22px;
     height: 35px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: right; */
-    /* justify-content: space-between; */
 }
 
 .nav-link {
     display: flex;
     justify-content: right;
-    /* flex-direction: column; */
-
 }
 
 .nav-bar ul {
@@ -40,7 +31,6 @@ body {
 }
 
 .nav-bar ul li a {
-    /* margin-top: 10px; */
     font-family: 'Strait', sans-serif;
     color: #fff;
     text-decoration: none;
@@ -50,10 +40,10 @@ body {
 
 .nav-bar ul :hover {
     background-color: rgb(211, 147, 132);
-    /* text-decoration: underline; */
 }
 
-/* dropdown section start*/
+
+/* dropdown section start ******************************************************** */
 #programme-drop {
     position: relative;
     display: inline-block;
@@ -62,8 +52,6 @@ body {
 .dropdown {
     display: none;
     position: absolute;
-    /* min-width: 160px; */
-    /* padding: 12px 16px; */
     z-index: 1;
     list-style: none;
     text-align: left;
@@ -77,35 +65,40 @@ body {
 
 .dropdown li a {
     font-size: 15px;
-    /* line-height: 1; */
+
 }
 
-/* dropdown section end*/
+/* dropdown section end **********************************************************/
 
 
 .container2 {
     display: flex;
     justify-content: space-between;
-    /* margin: 0 9% 0 18%; */
-    /* padding: 0px 76px 0 318px; */
-    /* padding: 0px 138px 0 244px; */
-    padding: 0 61px 0 0;
 }
 
 .logo {
-    /* text-align: right; */
-    /* display: flex; */
-    /* justify-content: right; */
+    width: 305px;
+    height: 193px;
 }
 
 .org-name p span {
     color: rgba(0, 0, 0, 0.3);
 }
 
-s
-/* .org-name p{
-    margin-left: 30px;
-} */
+.name p {
+    font-size: 80px;
+    color: #6b6d6e;
+    font-family: trebuchet ms, helvetica, sans-serif;
+    margin: 0;
+    padding: 58px 0 0 0;
+}
+
+.discription {
+    font-family: over the rainbow;
+    font-size: 28px;
+    word-wrap: break-word;
+}
+
 
 h3>p>span {
     font-family: "trebuchet ms,helvetica,sans-serif;";
@@ -116,32 +109,36 @@ h3>p>span {
     font-family: "over the rainbow";
 }
 
+
 /* text section start **********************************/
+.org-name {
+    word-break: break-all;
+}
+
 .text-container {
-    margin: 0 65px 0 220px;
+    margin: 0 232px 0 250px;
 }
 
 .text-section1 {
-    /* padding: 0px 0 0 318px; */
     background-color: #cac1b65e;
-    /* margin: 0 65px 0 220px; */
 }
 
 .text-section1 p {
-    padding: 30px;
+    padding: 30px 0px 30px 15px;
 }
 
-.text-secrion3 {
+.text-section3 strong {
     display: flex;
-    /* justify-content: space-between; */
     color: brown;
     font-family: over the rainbow;
     font-size: 22px;
 }
 
-.text-secrion3 p {
-    padding: 0 0 0 10px;
+.text-section3 p {
+    padding: 0 13px 0 5px;
+    font-size: 25px;
 }
+
 
 .table-container {
     display: flex;
@@ -149,29 +146,163 @@ h3>p>span {
     font-size: 15px;
     font-family: trebuchet ms, helvetica, sans-serif;
     color: #6b6d6e;
-    ;
 }
 
 .table-container div p {
-    padding: 0 45px 0 0px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
+.table-1 {
+    padding: 0 10px 0 10px;
+}
 
+.table-2 {
+    padding: 0 10px;
+}
+
+.table-3 {
+    padding: 0 0 20px;
+}
+
+hr {
+    height: 2px;
+}
 
 /* text section end*/
 
 
-/* Code of making responsive page */
 
-@media only screen and (max-width: 450px) {
+/* foote container start***************************** */
+.foot-container {
+    font-family: over the rainbow;
+    font-size: 24px;
+    word-spacing: 6px;
+}
+
+.foot-container p {
+    color: #6b6d6e;
+}
+
+/* foote container end***************************** */
+
+
+
+/* footer  start************************************* */
+.footer-container {
+    background-color: rgba(182, 182, 181, 0.41);
+    height: 200px;
+    /* margin-top: 10px; */
+}
+
+.footer-container p {
+    padding: 10px 0 0 109px;
+    color: #6b6d6e;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    margin: 10px 70px 0 0;
+}
+
+img {
+    height: 22px;
+}
+
+/* footer end ************************************* */
+
+
+
+/* Code of making responsive page ***************************/
+@media only screen and (max-width: 900px) {
     .nav-bar {
         display: none;
     }
-}
 
-@media only screen and (max-width: 1400) {
-    body {
-        padding: 0 30px 0 30px;
-
+    .container2 {
+        padding: 0;
     }
+
+    .text-container {
+        padding: 0 25px 0 35px;
+        margin: 0;
+    }
+
+    .nav-bar {
+        font-size: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .org-name .discription p {
+        font-size: 20px;
+        word-spacing: 1px;
+        word-wrap: break-word;
+    }
+
+    .org-name h3 {
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+
+    .table-container {
+        word-wrap: break-word;
+    }
+
+    .table-1 {
+        padding: 0 10px;
+    }
+
+    .table-2 {
+        padding-left: 20px;
+    }
+
+    .table-3 {
+        padding-right: 20px;
+    }
+
+    .text-section3 strong p {
+        font-size: 20px;
+        word-spacing: 0;
+        line-height: 1.4;
+    }
+
+    .table-container div p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .foot-container strong {
+        font-size: 22px;
+    }
+
+    .foot-container {
+        font-size: 22px;
+    }
+
+    .footer-container p {
+        padding-left: 6px;
+    }
+
+    .footer-container {
+        height: 100px;
+        margin: 0;
+    }
+
+    figure {
+        margin: 10px 0 0 0;
+    }
+
+    .name p {
+        font-size: 40px;
+    }
+
 }
+
