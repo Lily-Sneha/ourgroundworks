@@ -18,6 +18,7 @@ body {
     margin: 0 145px 0 145px;
     font-family: 'Strait', sans-serif;
     font-size: 22px;
+
     display: flex;
     justify-content: right;
     align-items: center;
@@ -93,7 +94,8 @@ body {
     color: grey;
     font-family: trebuchet ms, helvetica, sans-serif;
     margin: 0;
-    padding: 58px 0 0 76px;
+    padding: 58px 0;
+    text-align: center;
 }
 
 .discription {
@@ -114,19 +116,19 @@ h3>p>span {
 
 .name-desc h3 {
     margin: 0;
+    /* padding-left: 76px; */
 }
 
 /* text section start **********************************/
 
 .logo-and-org {
-    /* margin: 0 140px 0 147px; */
     margin: 0 159px 0 178px;
 }
 
 
 .text-container {
-    /* margin: 0 233px 0 242px; */
-    margin: 0 159px 0 178px;
+    /* margin: 0 159px 0 178px; */
+    padding: 0 159px 0 178px;
 }
 
 .text-section1 {
@@ -373,6 +375,7 @@ img {
         display: block;
     }
 }
+
 /* @media only screen and (max-width:900px){
     .chekbtn {
         display: block;
@@ -586,11 +589,11 @@ h3 {
 .programme-text-section1 h2 {
     margin: 30px 0 5px 0;
 }
-
 /* good pitch page end */
 
-/* changemedia page start *************************************/
 
+
+/* changemedia page start *************************************/
 .changemedia-text-section1 {
     margin: 60px 0 0 0;
 }
@@ -636,9 +639,6 @@ h3 {
     color: brown;
 }
 
-/* .changemedia-text-section3 ul li {
-    font-size: 25px;
-} */
 
 .changemedia-text-section3 p {
     font-family: trebuchet ms, helvetica, sans-serif;
@@ -703,11 +703,8 @@ p {
 
 form {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     padding: 50px;
-    /* background-color: rgba(163, 163, 159, 0.578); */
     background-color: rgba(231, 227, 215, 0.98);
     margin: 0 0 40px 0;
 }
@@ -768,7 +765,6 @@ hr {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    /* width: 100%; */
     opacity: 0.9;
 }
 
@@ -820,14 +816,13 @@ button {
 }
 
 
-@media only screen and (max-width: 768px) {
-}
+@media only screen and (max-width: 768px) {}
 
 
 @media only screen and (max-width: 1024px) {
     .form-container {
         margin: 0;
-    } 
+    }
 }
 
 /* footer ******************************** */
