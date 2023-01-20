@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgba(236, 228, 186, 0.41);
+    background-color: rgba(224, 216, 191, 0.98);
     background-image: url(//nebula.wsimg.com/4db9aa9…?AccessKeyId=531592D248B589D87A56&alloworigin=1);
     overflow-x: hidden;
 }
@@ -15,26 +15,34 @@ body {
 /* styling navigation bar */
 .nav-bar {
     background-color: #ff6026;
-    margin: 0 10% 0 12%;
+    margin: 0 145px 0 145px;
     font-family: 'Strait', sans-serif;
     font-size: 22px;
-    height: 35px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .nav-link {
     display: flex;
     justify-content: right;
+    margin: 0;
 }
 
 .nav-bar ul {
     list-style: none;
 }
 
+.nav-bar ul li {
+    padding: 10px 25px;
+}
+
 .nav-bar ul li a {
     font-family: 'Strait', sans-serif;
     color: #fff;
     text-decoration: none;
-    padding: 10px 25px;
+    /* padding: 10px 25px; */
     cursor: pointer;
 }
 
@@ -65,32 +73,27 @@ body {
 
 .dropdown li a {
     font-size: 15px;
-
 }
 
 /* dropdown section end **********************************************************/
 
-
-.container2 {
+.org-name {
     display: flex;
     justify-content: space-between;
 }
+
 
 .logo {
     width: 305px;
     height: 193px;
 }
 
-.org-name p span {
-    color: rgba(0, 0, 0, 0.3);
-}
-
 .name p {
-    font-size: 80px;
-    color: #6b6d6e;
+    font-size: 5.5rem;
+    color: grey;
     font-family: trebuchet ms, helvetica, sans-serif;
     margin: 0;
-    padding: 58px 0 0 0;
+    padding: 58px 0 0 76px;
 }
 
 .discription {
@@ -109,18 +112,25 @@ h3>p>span {
     font-family: "over the rainbow";
 }
 
-
-/* text section start **********************************/
-.org-name {
-    word-break: break-all;
+.name-desc h3 {
+    margin: 0;
 }
 
+/* text section start **********************************/
+
+.logo-and-org {
+    /* margin: 0 140px 0 147px; */
+    margin: 0 159px 0 178px;
+}
+
+
 .text-container {
-    margin: 0 232px 0 250px;
+    /* margin: 0 233px 0 242px; */
+    margin: 0 159px 0 178px;
 }
 
 .text-section1 {
-    background-color: #cac1b65e;
+    background-color: #e9e6e396;
 }
 
 .text-section1 p {
@@ -137,6 +147,8 @@ h3>p>span {
 .text-section3 p {
     padding: 0 13px 0 5px;
     font-size: 25px;
+    color: brown;
+    font-family: "over the rainbow";
 }
 
 
@@ -145,7 +157,7 @@ h3>p>span {
     justify-content: space-around;
     font-size: 15px;
     font-family: trebuchet ms, helvetica, sans-serif;
-    color: #6b6d6e;
+    color: grey;
 }
 
 .table-container div p {
@@ -174,14 +186,14 @@ hr {
 
 
 /* foote container start***************************** */
-.foot-container {
+.foot-container p {
     font-family: over the rainbow;
     font-size: 24px;
     word-spacing: 6px;
 }
 
 .foot-container p {
-    color: #6b6d6e;
+    color: grey;
 }
 
 /* foote container end***************************** */
@@ -190,14 +202,13 @@ hr {
 
 /* footer  start************************************* */
 .footer-container {
-    background-color: rgba(182, 182, 181, 0.41);
-    height: 200px;
-    /* margin-top: 10px; */
+    background-color: rgba(231, 226, 211, 0.98);
+    height: 150px;
 }
 
 .footer-container p {
     padding: 10px 0 0 109px;
-    color: #6b6d6e;
+    color: grey;
     margin: 0;
 }
 
@@ -229,7 +240,7 @@ img {
     }
 
     .text-container {
-        padding: 0 25px 0 35px;
+        padding: 0 10px 0 10px;
         margin: 0;
     }
 
@@ -241,31 +252,25 @@ img {
         display: none;
     }
 
-    .org-name .discription p {
-        font-size: 20px;
-        word-spacing: 1px;
-        word-wrap: break-word;
-    }
 
     .org-name h3 {
         font-size: 20px;
         word-wrap: break-word;
     }
 
+    .name p {
+        font-size: 2.4rem;
+        padding-left: 0;
+    }
+
     .table-container {
         word-wrap: break-word;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .table-1 {
         padding: 0 10px;
-    }
-
-    .table-2 {
-        padding-left: 20px;
-    }
-
-    .table-3 {
-        padding-right: 20px;
     }
 
     .text-section3 strong p {
@@ -276,7 +281,6 @@ img {
 
     .table-container div p {
         font-size: 15px;
-        margin: 0;
     }
 
     .foot-container strong {
@@ -300,9 +304,542 @@ img {
         margin: 10px 0 0 0;
     }
 
-    .name p {
-        font-size: 40px;
-    }
+}
+
+
+
+/* ****************************************************  */
+/* hamburger  and second navigation bar start */
+
+.second-nav {
+    background-color: #ff6026;
+}
+
+.second-nav ul li {
+    list-style: none;
+    display: flex;
+}
+
+#ham-link {
+    display: none;
+    text-align: left;
+    /* height: 200px; */
+    max-width: 100%;
+}
+
+
+.second-nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 12px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Strait', sans-serif;
+}
+
+/* second-nav-dropdown  ****************** */
+#second-nav-pro-drop {
+    position: relative;
+    display: inline-block;
+}
+
+.second-nav-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    text-align: left;
+    border: 1px solid white;
+    background-color: #ff6026;
+    padding-left: 0;
+}
+
+
+#ham-link .second-nav-dropdown li a {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#ham-link #second-nav-pro-drop:hover .second-nav-dropdown,
+#ham-link #second-nav-pro-drop:active .second-nav-dropdown {
+    display: block;
 
 }
 
+/* ********************************************************  */
+
+@media only screen and (max-width:768px) {
+    .chekbtn {
+        display: block;
+    }
+}
+/* @media only screen and (max-width:900px){
+    .chekbtn {
+        display: block;
+    }
+} */
+
+/* hamburger *************************************  */
+label {
+    display: none;
+    float: right;
+}
+
+label button {
+    height: 40px;
+    width: 50px;
+    background-color: orangered;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 10px 20 0;
+}
+
+label button i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* hamburger media querry end */
+
+@media only screen and (max-width: 320px) {
+    .table-container {
+        font-size: 15px;
+    }
+
+    .org-name {
+        display: inline-block;
+    }
+
+    .logo-and-org {
+        margin: 0;
+    }
+
+    .name-desc {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo-and-org {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .logo-and-org {
+        margin: 0;
+    }
+}
+
+/* ******************************************************************  */
+
+@media screen and (max-width: 1024px) {
+    .founder p {
+        line-height: 1.5;
+
+    }
+
+    .logo img {
+        padding: 0 50px 0 0;
+    }
+
+    .nav-bar {
+        margin: 0 0px 0 100px;
+    }
+
+    .logo-and-org {
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    .text-container {
+        /* margin: 0 50px; */
+    }
+
+    .name-desc {
+        padding: 0 0 0 70px;
+    }
+}
+
+
+/* About page styling start ************************************* */
+.about-text-section1 {
+    background-color: #cac1b65e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-founder h3 {
+    padding: 0 15px;
+    font-family: "over the rainbow";
+    font-size: 50px;
+    color: grey;
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+    padding: 0 30px;
+}
+
+.about-founder p {
+    padding: 10px 15px;
+    color: grey;
+    font-size: 20px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    margin: 0;
+}
+
+.about-founder,
+.founder-image {
+    margin: 50px 20px;
+}
+
+
+/* about-text-section2 start  */
+.about-text-section2 {
+    margin: 54px 266px 70px 60px;
+    font-family: trebuchet ms, helvetica, sans-serif;
+}
+
+.about-text-section2>ul {
+    font-family: trebuchet ms, helvetica, sans-serif;
+    color: grey;
+    margin: 0;
+}
+
+.about-text-section2>ul>li {
+    line-height: 1.5;
+    word-spacing: 1px;
+    font-size: 18px;
+}
+
+.about-text-section2>ul>li>strong {
+    font-size: 23px;
+}
+
+@media only screen and (max-width: 320px) {
+    .about-text-section2 {
+        margin: 0;
+    }
+
+    .about-text-section1 {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .about-text-section2 {
+        margin: 0;
+    }
+
+    .about-text-section1 {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .about-text-section2 {
+        margin: 0;
+    }
+
+    .about-text-section1 {
+        flex-wrap: wrap;
+    }
+}
+
+/* programme-text-section start ******************* */
+
+/* good pitch page start */
+.programme-text-section1 p {
+    color: grey;
+    font-family: trebuchet ms, helvetica, sans-serif;
+    line-height: 1.5;
+    word-spacing: 1px;
+    font-size: 18px;
+}
+
+.programme-text-section1 h2,
+h3 {
+    font-family: trebuchet ms, helvetica, sans-serif;
+}
+
+.programme-text-section1 h2,
+h3 {
+    color: brown;
+}
+
+.programme-text-section1 h4 {
+    color: brown;
+    font-family: trebuchet ms, helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.programme-text-section1 p span {
+    color: brown;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.programme-text-section1 h2 {
+    margin: 30px 0 5px 0;
+}
+
+/* good pitch page end */
+
+/* changemedia page start *************************************/
+
+.changemedia-text-section1 {
+    margin: 60px 0 0 0;
+}
+
+.changemedia-text-section1 h2 {
+    font-family: trebuchet ms, helvetica, sans-serif;
+    color: brown;
+    font-size: 32px;
+    text-align: center;
+}
+
+.changemedia-text-section1 p {
+    color: grey;
+    font-family: "over the rainbow";
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* insight ********************************** */
+
+.changemedia-insight p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.changemedia-insight h2 {
+    text-align: center;
+    color: grey;
+    font-family: "over the rainbow";
+    font-size: 30px;
+}
+
+.changemedia-insight p span {
+    font-weight: bolder;
+}
+
+/* changemedia-text-section3 strat ************************** */
+
+.changemedia-text-section3 ul {
+    font-family: "over the rainbow";
+    color: brown;
+}
+
+/* .changemedia-text-section3 ul li {
+    font-size: 25px;
+} */
+
+.changemedia-text-section3 p {
+    font-family: trebuchet ms, helvetica, sans-serif;
+    color: grey;
+    font-size: 30px;
+}
+
+.changemedia-text-section3 ul li {
+    font-size: 25px;
+    font-family: "over the rainbow";
+}
+
+/* project section start ******************************* */
+
+.project-section {
+    margin: 80px 0 80px 0;
+}
+
+.project-section h2,
+h4,
+p {
+    font-family: trebuchet ms, helvetica, sans-serif;
+    color: grey;
+}
+
+.project-section h2 {
+    color: grey;
+    font-size: 30px;
+}
+
+.project-section h4 {
+    color: brown;
+}
+
+.project-section p span {
+    font-size: 22px;
+    font-weight: bolder;
+    color: brown;
+}
+
+.project-section p i {
+    font-size: 22px;
+    color: brown;
+}
+
+.project-section p b {
+    font-size: 18px;
+}
+
+/* project section end  ******************************* */
+/* changemedia page end *************************************** */
+
+/* About page styling end ************************************* */
+
+
+
+/* Contact page start **************************/
+.form-container {
+    display: flex;
+    margin: 0 145px;
+}
+
+form {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 50px;
+    /* background-color: rgba(163, 163, 159, 0.578); */
+    background-color: rgba(231, 227, 215, 0.98);
+    margin: 0 0 40px 0;
+}
+
+form div h1 {
+    font-family: "over the rainbow";
+    color: grey;
+    padding: 20px 30px;
+    font-size: 40px;
+}
+
+form label b {
+    text-align: center;
+    font-family: trebuchet ms, helvetica, sans-serif;
+}
+
+form .container {
+    padding-right: 60px;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=email],
+input[type=subject],
+input[type=message] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid rgba(163, 163, 159, 0.578);
+    background: #f1f1f1;
+}
+
+input[type=message] {
+    height: 100px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=subject]:focus,
+input[type=message]:focus {
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+hr {
+    margin-bottom: 25px;
+}
+
+
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: orangered;
+    border: 1px solid red;
+    color: white;
+    padding: 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+button {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container form .container label {
+    display: block;
+}
+
+
+@media only screen and (max-width: 320px) {
+    form {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .map {
+        margin: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    form {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    form {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .form-container {
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .form-container {
+        margin: 0;
+    } 
+}
+
+/* footer ******************************** */
+
+@media only screen and (max-width: 320px) {
+    .form-container {
+        margin: 0;
+    }
+
+    .footer-container {
+        margin: 0;
+    }
+}
+
+/* ****************************************** */
