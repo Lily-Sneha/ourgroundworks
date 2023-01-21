@@ -7,7 +7,7 @@
 
 body {
     background-color: rgba(224, 216, 191, 0.98);
-    background-image: url(//nebula.wsimg.com/4db9aa9…?AccessKeyId=531592D248B589D87A56&alloworigin=1);
+    /* background-image: url(//nebula.wsimg.com/4db9aa9…?AccessKeyId=531592D248B589D87A56&alloworigin=1); */
     overflow-x: hidden;
 }
 
@@ -81,6 +81,7 @@ body {
 .org-name {
     display: flex;
     justify-content: space-between;
+    padding: 0 111px 0 127px;
 }
 
 
@@ -117,6 +118,7 @@ h3>p>span {
 .name-desc h3 {
     margin: 0;
     /* padding-left: 76px; */
+    /* text-align: center; */
 }
 
 /* text section start **********************************/
@@ -127,8 +129,7 @@ h3>p>span {
 
 
 .text-container {
-    /* margin: 0 159px 0 178px; */
-    padding: 0 159px 0 178px;
+    padding: 0 70px 0 100px;
 }
 
 .text-section1 {
@@ -190,7 +191,7 @@ hr {
 /* foote container start***************************** */
 .foot-container p {
     font-family: over the rainbow;
-    font-size: 24px;
+    font-size: 22px;
     word-spacing: 6px;
 }
 
@@ -214,9 +215,19 @@ hr {
     margin: 0;
 }
 
+.footer-container .editor {
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 0 0 10px;
+}
+
+
 footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 figure {
@@ -235,6 +246,10 @@ img {
 @media only screen and (max-width: 900px) {
     .nav-bar {
         display: none;
+    }
+
+    .chekbtn {
+        display: block;
     }
 
     .container2 {
@@ -263,6 +278,7 @@ img {
     .name p {
         font-size: 2.4rem;
         padding-left: 0;
+        padding-bottom: 0;
     }
 
     .table-container {
@@ -298,12 +314,16 @@ img {
     }
 
     .footer-container {
-        height: 100px;
+        height: 116px;
         margin: 0;
     }
 
     figure {
         margin: 10px 0 0 0;
+    }
+
+    .editor {
+        padding: 0;
     }
 
 }
@@ -322,10 +342,10 @@ img {
     display: flex;
 }
 
+
 #ham-link {
     display: none;
     text-align: left;
-    /* height: 200px; */
     max-width: 100%;
 }
 
@@ -365,7 +385,6 @@ img {
 #ham-link #second-nav-pro-drop:hover .second-nav-dropdown,
 #ham-link #second-nav-pro-drop:active .second-nav-dropdown {
     display: block;
-
 }
 
 /* ********************************************************  */
@@ -374,13 +393,11 @@ img {
     .chekbtn {
         display: block;
     }
-}
 
-/* @media only screen and (max-width:900px){
-    .chekbtn {
-        display: block;
+    .footer-container .editor {
+        padding: 0;
     }
-} */
+}
 
 /* hamburger *************************************  */
 label {
@@ -412,6 +429,7 @@ label button i {
 
     .org-name {
         display: inline-block;
+        padding: 0;
     }
 
     .logo-and-org {
@@ -427,11 +445,21 @@ label button i {
     .logo-and-org {
         margin: 0;
     }
+
+    .org-name {
+        display: inline-block;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 425px) {
     .logo-and-org {
         margin: 0;
+    }
+
+    .org-name {
+        display: inline-block;
+        padding: 0;
     }
 }
 
@@ -445,6 +473,7 @@ label button i {
 
     .logo img {
         padding: 0 50px 0 0;
+        overflow-x: hidden;
     }
 
     .nav-bar {
@@ -454,14 +483,6 @@ label button i {
     .logo-and-org {
         margin: 0;
         padding: 0 40px;
-    }
-
-    .text-container {
-        /* margin: 0 50px; */
-    }
-
-    .name-desc {
-        padding: 0 0 0 70px;
     }
 }
 
@@ -589,6 +610,7 @@ h3 {
 .programme-text-section1 h2 {
     margin: 30px 0 5px 0;
 }
+
 /* good pitch page end */
 
 
@@ -696,7 +718,30 @@ p {
 
 
 /* Contact page start **************************/
-.form-container {
+
+.contact {
+    background-color: rgba(231, 227, 215, 0.98);
+}
+
+.contact span[class] {
+    font-size: 25px;
+    font-style: italic;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact span[class] p {
+    color: brown;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.contact .address p {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+/* .form-container {
     display: flex;
     margin: 0 145px;
 }
@@ -723,10 +768,11 @@ form label b {
 
 form .container {
     padding-right: 60px;
-}
+} */
 
-/* Full-width input fields */
-input[type=text],
+
+/* Full-width input fields form part */
+/* input[type=text],
 input[type=email],
 input[type=subject],
 input[type=message] {
@@ -752,12 +798,12 @@ input[type=message]:focus {
 
 hr {
     margin-bottom: 25px;
-}
+} */
 
 
 
 /* Set a style for the submit button */
-.registerbtn {
+/* .registerbtn {
     background-color: orangered;
     border: 1px solid red;
     color: white;
@@ -779,7 +825,7 @@ button {
 
 .form-container form .container label {
     display: block;
-}
+} */
 
 
 @media only screen and (max-width: 320px) {
